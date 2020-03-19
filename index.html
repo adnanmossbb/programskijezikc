@@ -1,0 +1,114 @@
+<style>
+        body{
+	        font-family: Arial;
+	        width:700px;
+        }
+        #meni{
+	        list-style:none;
+	        background-color:#dde;
+	        display:inline-block;
+	        padding:10px;
+	        width:200px;
+        }
+        #meni-link{
+	        color:black;
+        }
+        #meni-naslov{
+	        margin-bottom:5px;
+	        font-size:20px;
+        }
+        .code-c{
+            font-size:15px;
+            background-color:#eee;
+            padding:10px;
+            font-family:monospace;
+        }
+        code{
+            font-family:monospace;
+        }
+        @media only screen and (max-width:700px){
+	        body{
+		        width:97.5%	
+	        }
+        }
+        footer{
+            margin-top:50px;
+        }
+        p{
+            text-align: justify;
+        }
+        </style>
+
+<h1>Programski jezik C</h1>
+        <p>Autor stranice: Adnan Muradbegović</p>
+
+		<ul id="meni">
+			<li id="meni-naslov"><b>Meni</b></li>
+			<li><a id="meni-link" href="#uvod">Uvod</a></li>
+			<li><a id="meni-link" href="#historija">Historija</a></li>			
+            <li><a id="meni-link" href="#znacaj">Značaj i prednosti</a></li>
+            <li><a id="meni-link" href="#primjer">Primjer</a></li>
+		</ul>
+		<h2 id = "uvod">Uvod</h2>
+        <hr />
+        <p>
+            Svrha ove stranice je da vas upozna sa programskim jezikom C i da vas po mogućnosti zainteresuje za
+            ovaj legendarni alat za razvoj softvera. &#128512;
+        </p>
+		<p>
+            C je programski jezik srednjeg nivoa, to jeste ima mogućnosti programskih jezika nižeg nivoa dok
+            i dalje ime određen nivo apstrakcije. Može se koristiti za izradu širokog spektra programa od operativnih
+            sistema do svakodnevnih aplikacija kao što je web preglednik. C je veoma koristan i popularan jezik, te 
+            su mnogi programi koje koristimo svaki dan napisani u C-u.
+        </p>
+        <h2 id = "historija">Historija</h2>
+		<hr />
+		<p>
+            C je razvijen i pušten u upotrebu još 1972. godine. Napravio ga je Dennis Richie, inžinjer koji je
+            radio za AT&T Bell Labs. Programski jezik C je izumljen da bi omogućio razvoj revolucionarnog operativnog sistema
+            Unix, koji je već bio napisan u asembleru, ali htjeli su ga ponovno napisati u programskom jeziku koji će 
+            omogućiti prenosivost koda na razlićitim platformama. Kasnije je C stekao ogromnu popularnost, te su se pojavili
+            mnogi kompajleri i implementacije, uključujući Microsoft C, Turbo C i Gnu Compiler Collection. Danas se C većinom koristi
+            za razvoj operativnih sistema i za programe sa intenzivnom grafikom.
+        </p>
+        <h2 id = "znacaj">Značaj i prednosti</h2>
+		<hr />
+		<p>
+            Mnogi C zovu "najvažnijim programskim jezikom", što je opravdano, zbog hiljada programa i platformi koje su ovisile o C-u.
+            Osim na to što su u C-u napisani svi vodeći operativni sistemi, C je također imao neizmjeran uticaj na novije programske
+            jezike kao što su Java i C++. U svakom slučaju, svijet informatike kakav poznajemo ne bi postojao bez C-a i njegovog autora.  
+        </p>
+        <p>
+            C je svoju veliku popularnost stekao zbog svojih brojnih prednosti, među kojima su:
+            <ul>
+                <li>Odlične performanse kompajliranog koda</li>
+                <li>Mogućnost direktnog pristupa memoriji</li>
+                <li>Jednostavnost upotrebe (C ima 32 ključne riječi)</li>
+                <li>Dostupnost na svim platformama</li>
+                <li>Mogućnost naslanjanja na druge tehnologije</li>
+                <li>...</li>
+            </ul> 
+        </p>
+        <h2 id = "primjer">Primjer</h2>
+		<hr />
+		<p>
+            Dole možete vidjeti najjednostavniji primjer koda napisanog u C-u. Prva linija koda učitava 
+            standardnu biblioteku za ulaz i izlaz. Druga linija koda definiše funkciju <code>main</code> koja
+            će se izvršiti nakon pokretanja programa. Nakon togra pozvata je funkcija <code>printf</code> pomoću koje
+            je ispisan tekst "Hello World!". Znak <code>'\n'</code> pomjera kursor u sljedeću liniju. U C-u svaka linija
+            završava za tačka-zarezom osim onih koje sadrže specijalne komande za učitavanje biblioteka ili 
+            definisanje konstanti.
+        </p>
+        <div class="code-c">
+            <code>
+                #include&#60;stdio.h&#62;<br />
+                main(){<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;printf("Hello World!\n");<br />
+                }<br />
+            </code>
+        </div>
+        
+        <footer>
+            <p>&copy; Adnan Muradbegović 2020.</p>
+            <p><a href="mailto:adnan.muradbegovic@ossbb.edu.ba">adnan.muradbegovic@ossbb.edu.ba</a></p>
+        </footer>
